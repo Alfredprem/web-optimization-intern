@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "terser": "^5.31.1"
+  },
+  "devDependencies": {
+    "purgecss": "^6.0.0"
+  }
+}

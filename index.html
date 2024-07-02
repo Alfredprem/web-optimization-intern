@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Optimization Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.min.js" defer></script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Optimization Task</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Gallery</h2>
+            <!-- <img src="large-image1.jpg" alt="Large Image 1">
+            <img src="large-image2.jpg" alt="Large Image 2"> -->
+            <img src="new_image_1.webp" alt="optimized image 1" width = 400px height = 300px loading ="lazy">
+            <img src="new_image_2.webp" alt="optimized image 2" width = 400px height = 300px laoding ="lazy">
+        </section>
+        <section>
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eros. Fusce mollis libero ac orci facilisis, eu ullamcorper risus scelerisque.</p>
+            <p>Donec lacinia, diam in vehicula consectetur, velit ex scelerisque nunc, id varius eros turpis ac magna. Vestibulum sit amet sem ac nunc porta blandit.</p>
+        </section>
+        <!--added a button redirecting to a link for interactivity to check the FID-->
+        <section><a href="https://github.com/"><button>Click me</button></a></section>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then((registration) => {
+                console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch((error) => {
+                console.error('Service Worker registration failed:', error);
+              });
+          });
+        }
+      </script>
+</body>
+</html>
